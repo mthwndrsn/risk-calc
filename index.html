@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Risk Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cybersecurity Risk Assessment</h1>
+        <form id="risk-form">
+            <label for="numEmployees">Number of Employees:</label>
+            <input type="number" id="numEmployees" name="numEmployees" required>
+            
+            <label for="dataSensitivity">Data Sensitivity (Low, Medium, High):</label>
+            <select id="dataSensitivity" name="dataSensitivity">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            
+            <label for="itInfrastructure">IT Infrastructure Complexity (Simple, Moderate, Complex):</label>
+            <select id="itInfrastructure" name="itInfrastructure">
+                <option value="simple">Simple</option>
+                <option value="moderate">Moderate</option>
+                <option value="complex">Complex</option>
+            </select>
+            
+            <button type="submit">Calculate Risk</button>
+        </form>
+        <div id="risk-result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
